@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather condition Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS for responsive design -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="col-lg-4 col-sm-12 col-md-4 justify-content-center mx-auto text-white text-center cont">
+        <!-- Main weather app container -->
+        <h1>Weather App</h1>
+        <div class="cont2 mt-2 px-3">
+            <!-- City input and search button -->
+            <input type="text" class="form-control  form-control-sm w-50" id="inp" placeholder="Enter City Name">
+            <button id="search"><img src="images/Vector-Search-PNG-Image.png" class="img-fluid" alt=""></button>
+        </div>
+        <!-- Error messages for empty input and city not found -->
+        <div class="animate__animated animate__flash animate__infinite	infinite animate__slow	2s mt-2 w-50 mx-auto"
+            style="display: none;" id="error">
+            <p class="border-0 rounded bg-danger text-white">Field cannot be empty</p>
+        </div>
+        <div class="animate__animated animate__flash animate__infinite	infinite animate__slow	2s mt-2 w-50 mx-auto"
+            style="display: none;" id="errorNew">
+            <p class="border-0 rounded bg-warning-subtle text-dark">City not found</p>
+        </div>
+        <!-- Weather display section -->
+        <div class="weather">
+            <img src="images/heavy-rain.png" class="weather-icon" id="weatherIcon">
+            <h1 class="temp" id="temp">22℃<h1>
+                    <h2 class="city" id="city">New York</h2>
+                    <h2 style="display: none;" id="result">Sunny</h2>
+                    <!-- Weather details such as humidity and wind speed -->
+                    <div class="details">
+                        <div class="col">
+                            <img src="images/2682807_drop_high_humidity_percentage_precipitation_icon.png" alt="">
+                            <div>
+                                <p class="humidity" id="hum">50%</p>
+                                <p>Humidity</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="images/110795_wind_icon.png" alt="">
+                            <div>
+                                <p class="wind" id="win">15km/h</p>
+                                <p>Wind Speed</p>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript bundle for responsive features -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- Custom JavaScript for ClimaView functionality -->
+    <script src="script.js"></script>
+</body>
+
+</html>

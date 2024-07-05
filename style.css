@@ -1,0 +1,126 @@
+/* Reset default styles and set font family */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    /* Full viewport height and centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #004378, #5b548a);
+    color: #fff;
+    overflow: hidden;
+}
+
+.cont {
+    /* Main container styling */
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cont2 {
+    /* City input and button container */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cont2 input {
+    /* City input styling */
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 20px;
+    height: 45px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.cont2 button {
+    /* Search button styling */
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-icon {
+    /* Weather icon styling */
+    width: 100px;
+    margin-top: 20px;
+}
+
+.weather h1 {
+    /* Temperature styling */
+    font-size: 4rem;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.weather h2 {
+    /* City name and weather condition styling */
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.details {
+    /* Weather details container */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.col {
+    /* Column styling for humidity and wind speed */
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    /* Icon styling within weather details */
+    width: 30px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    /* Humidity and wind speed text styling */
+    font-size: 1.2rem;
+    margin-top: -3px;
+    color: #fff;
+}
+
+.error {
+    text-align: left;
+    margin-left: 25px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
